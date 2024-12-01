@@ -101,3 +101,4 @@ inputFile2.addEventListener('change', function () {
 		alert("Image size more than 5MB");
 	}
 })
+

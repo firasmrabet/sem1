@@ -16,226 +16,97 @@
     <!-- Link File CSS -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="stylelogin.css">
+   
+    
+      
 </head>
-<body class="menu-side-in-bag">
+<body  class="menu-side-in-bag">
 
-    <header>
+    <header  style="background-image: url('https://png.pngtree.com/background/20230414/original/pngtree-colorful-simple-background-for-website-picture-image_2424835.jpg'); background-size: cover; background-repeat: no-repeat;" >
+        >
 
-        <div class="header-top">
+         
+        <div style="margin-right: 40%; margin-bottom: 2%;" class="header-top">
+
             <div class="contanier">
              <p>  Bienvenue dans la boutique SMART STORE  </p>
-             <div class="link-top-heder">
-                 <a href="#">My Account</a>
-                 <a href="#">My Wishlist</a>
-                 <a href="#">Sign In</a>
-                 
-             </div>
+             <div class="link-top-header">
+                <a href="sign-in-page.html"><h1>Sign In</h1></a>
+            </div>
+            
          </div>
            </div>
 
-           <div class="header-info">
-            <div class="contanier">
-                <!--<img src="img/logo.png" alt="">-->
-                <img src="new pho/smart1.jpg" alt="" style="width:100px; height:auto;">
-            
-            <div class="search-bar">
-                <form action="">
-                    <input type="search" placeholder="Que souhaitez vous acheter..">
-                    <button class="btn-srch">chercher</button>
-                </form>
-            </div>
-            <div class="card">
-                <div class="price">
-                    <p>panier</p>
-                    <!--<span>255.00 /span>-->
-                </div>
-                <a href="mycart.html"><i class="fa-solid fa-bag-shopping"></i> <span class="count-in-card">2</span></a>
-
-                
-            </div>
-            </div>
-        </div>
-
-        <div class="header-bottom">
-           <div class="contanier">
-            <!--<i id="open-side" class="fa-solid fa-bars"></i>-->
-
-            <ul class="nav-links">
-                    
-                <li><a href="index.html">page principale</a>
-                
-                </li>
-
-                <li>
-                    <a href="features.html">casque</a>
-
-                  
-                </li>
-
-                <li>
-                    <a href="about.html">souris</a>
-                </li>
-
-                <li>
-                    <a href="contact.html">Airpods</a>
-                </li>
-                <li><a href="index.html"> coque téléphone</a></li>
-
-                <li><a href="index.html"> ordinateurs</a></li>
-                <li><a href="index.html"> téléphones</a></li>
-              
-
-
-            </ul>
            
-
-            
-           </div>
-        </div>
-
-
-    </header>
-
     <div class="contanier">
 
 
-        <div class="box-sign-up">
+        <div   class="box-sign-up">
             <div class="signup">
 
-                <form action="">
+                <form st action="">
 
                     <label for="email">Nom et prénom</label>
                     <div class="inp">
                         <i class="fa-solid fa-envelope"></i>
                         <input type="text" placeholder="entrez votre nom complet">
                     </div>
-
+            
                     <label for="email">email</label>
                     <div class="inp">
                         <i class="fa-solid fa-envelope"></i>
                         <input type="email" placeholder="entrez votre mail">
                     </div>
-
+            
                     <label for="email">Numéro de téléphone</label>
                     <div class="inp">
                         <i class="fa-solid fa-envelope"></i>
                         <input type="number" placeholder="entrez votre numéro de téléphone">
                     </div>
-
-
-                    
-
-
+            
                     <label for="email">Adresse</label>
                     <div class="inp">
                         <i class="fa-solid fa-envelope"></i>
                         <input type="text" placeholder="entrez votre adresse">
                     </div>
-
+            
                     <label for="password">mot de passe</label>
                     <div class="inp">
                         <i class="fa-solid fa-lock"></i>
                         <input type="password" placeholder="entrez votre mot de passe">
                     </div>
-
-
+            
                     <div class="check-box">
                         <div class="check">
                             <input type="checkbox">
                             <span>Sauvegarder le compte</span>
-
                         </div>
-                        
                     </div>
-
-                    <button> créer un compte</button>
+            
+                    <!-- Bouton avec id pour la redirection -->
+                    <div>
+                        <button type="button" id="create-account-btn">Créer un compte</button>
+                    </div>
+            
                 </form>
-
-                <span class="line-sign">or</span>
-
-                <div class="sign-soc">
-               
-                 
-                    <div class="box">
-                        <a class="btn" href="#"><img src="img/google.png" alt=""> se connecter avec votre compte google</a>
-                    </div>
-                </div>
-
-                <p class="creat-ac">avez vous déjà un compte?<a href="#">se connecter</a></p>
-            </div>
-        </div>
-    </div>
+            
+                <script>
+                    // Sélectionner le bouton par son ID
+                    const createAccountButton = document.getElementById('create-account-btn');
+            
+                    // Ajouter un écouteur d'événements pour le clic sur le bouton
+                    createAccountButton.addEventListener('click', function() {
+                        // Rediriger l'utilisateur vers index.html
+                        window.location.href = 'index.html';
+                    });
+                </script>
 
 
-    <footer>
-        <div class="contanier">
-            <div class="top-footer">
-                <div class="row">
-                    <img src="img/logo.png" alt="">
-                    <div class="hotline">
-                        
-                        <div class="hotline-text">
-                            <h6>Notre contact</h6>
-                            <span>(+216) 99661555</span>
-                        </div>
-                        <i class="fa-solid fa-headset"></i>
-                    </div>
-                    
-                </div>
-                <div class="small-row">
-                    <h6> en savoir encore plus sur nous</h6>
-                    <div class="links-row">
-                        <a href="#"> <i class="fa-solid fa-angle-left"></i>des infos sur notre site</a>
-                        <a href="#"><i class="fa-solid fa-angle-left"></i>payement et livraison</a>
-                       
-                    </div>
-                </div>
 
-               
+<!-- Swiper JS -->
+<script src="swiperJs/swiper-bundle.min.js"></script>
 
-                <div class="small-row">
-                    <h6> Faire votre shopping avec nous</h6>
-                    <div class="links-row">
-                        <a href="#"><i class="fa-solid fa-angle-left"></i> Votre compte</a>
-                        <a href="#"><i class="fa-solid fa-angle-left"></i> Vos achats</a>
-                        <a href="#"><i class="fa-solid fa-angle-left"></i> Votre adresse</a>
-                        <a href="#"><i class="fa-solid fa-angle-left"></i> Vos listes</a>
-                    </div>
-                </div>
-
-                <div class="small-row">
-                    <h6> Laissez-nous vous aider</h6>
-                    <div class="links-row">
-                        <a href="#"><i class="fa-solid fa-angle-left"></i> Aide et support</a>
-                        <a href="#"><i class="fa-solid fa-angle-left"></i> Suivi de commande</a>
-                        <a href="#"><i class="fa-solid fa-angle-left"></i> Politique de retour</a>
-                        <a href="#"><i class="fa-solid fa-angle-left"></i> Termes et conditions</a>
-                    </div>
-                </div>
-
-        
-
-            </div>
-
-        </div>
-
-        <div class="bottom-footer">
-            <div class="contanier">
-                <p> <span>SMART STORE</span></p>
-            <div class="payment">
-                <img src="img/payment-1.png" alt="">
-                <img src="img/payment-2.png" alt="">
-                <img src="img/payment-3.png" alt="">
-                <img src="img/payment-4.png" alt="">
-            </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Swiper JS -->
-    <script src="swiperJs/swiper-bundle.min.js"></script>
-
-    <!-- Linke File JS -->
-    <script src="main.js"></script>
+<!-- Linke File JS -->
+<script src="main.js"></script>
 </body>
 </html>
