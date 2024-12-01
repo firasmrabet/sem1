@@ -602,15 +602,36 @@
 
         </div>
 
+        
         <div class="bottom-footer">
             <div class="contanier">
-                <p> <span>SMART STORE </span></p>
-            <div class="payment">
-                <img src="img/payment-1.png" alt="">
-                <img src="img/payment-2.png" alt="">
-                <img src="img/payment-3.png" alt="">
-                <img src="img/payment-4.png" alt="">
-            </div>
+                
+                <div class="payment">
+                    <img id="payment-1" src="img/payment-1.png" alt="Payment Method 1">
+                    <img id="payment-2" src="img/payment-2.png" alt="Payment Method 2">
+                    <img id="payment-3" src="img/payment-3.png" alt="Payment Method 3">
+                    <img id="payment-4" src="img/payment-4.png" alt="Payment Method 4">
+                </div>
+                
+                <script>
+                    // Ajouter des gestionnaires de clic pour chaque image en utilisant leurs IDs
+                    document.getElementById("payment-1").addEventListener("click", () => {
+                        window.location.href = "paiment.html";
+                    });
+                
+                    document.getElementById("payment-2").addEventListener("click", () => {
+                        window.location.href = "paiment.html";
+                    });
+                
+                    document.getElementById("payment-3").addEventListener("click", () => {
+                        window.location.href = "paiment.html";
+                    });
+                
+                    document.getElementById("payment-4").addEventListener("click", () => {
+                        window.location.href = "paiment.html";
+                    });
+                </script>
+                
             </div>
         </div>
     </footer>

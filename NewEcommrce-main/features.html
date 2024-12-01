@@ -781,7 +781,7 @@
                     <div class="hotline">
                         
                         <div class="hotline-text">
-                            <h6>خدمة عملاء 24/7</h6>
+                            <h6> 24/24 Services client</h6>
                             <span>(+216) 26521249</span>
                         </div>
                         <i class="fa-solid fa-headset"></i>
@@ -799,25 +799,13 @@
                     </div>
                 </div>
 
-                <div class="small-row">
-                    <h6> تسوق معنا</h6>
-                    <div class="links-row">
-                        <a href="#"><i class="fa-solid fa-angle-left"></i>Votre compte</a>
-                        <a href="#"><i class="fa-solid fa-angle-left"></i>Vos achats</a>
-                        <a href="#"><i class="fa-solid fa-angle-left"></i>Vos adresses</a>
-                        <a href="#"><i class="fa-solid fa-angle-left"></i>Vos listes</a>
-                        
+                
                     </div>
                 </div>
 
                 <div class="small-row">
                     <h6> Laissez-nous vous aider</h6>
-                    <div class="links-row">
-                        <a href="#"><i class="fa-solid fa-angle-left"></i>Aide et support</a>
-                        <a href="#"><i class="fa-solid fa-angle-left"></i>Suivi de commande</a>
-                        <a href="#"><i class="fa-solid fa-angle-left"></i>Politique de retour</a>
-                        <a href="#"><i class="fa-solid fa-angle-left"></i>Termes et conditions</a>
-                    </div>
+                    
 
                     </div>
                 </div>
@@ -828,15 +816,36 @@
 
         </div>
 
+        
         <div class="bottom-footer">
             <div class="contanier">
-                <p> <span>SMART STORE</span></p>
-            <div class="payment">
-                <img src="img/payment-1.png" alt="">
-                <img src="img/payment-2.png" alt="">
-                <img src="img/payment-3.png" alt="">
-                <img src="img/payment-4.png" alt="">
-            </div>
+                
+                <div class="payment">
+                    <img id="payment-1" src="img/payment-1.png" alt="Payment Method 1">
+                    <img id="payment-2" src="img/payment-2.png" alt="Payment Method 2">
+                    <img id="payment-3" src="img/payment-3.png" alt="Payment Method 3">
+                    <img id="payment-4" src="img/payment-4.png" alt="Payment Method 4">
+                </div>
+                
+                <script>
+                    // Ajouter des gestionnaires de clic pour chaque image en utilisant leurs IDs
+                    document.getElementById("payment-1").addEventListener("click", () => {
+                        window.location.href = "paiment.html";
+                    });
+                
+                    document.getElementById("payment-2").addEventListener("click", () => {
+                        window.location.href = "paiment.html";
+                    });
+                
+                    document.getElementById("payment-3").addEventListener("click", () => {
+                        window.location.href = "paiment.html";
+                    });
+                
+                    document.getElementById("payment-4").addEventListener("click", () => {
+                        window.location.href = "paiment.html";
+                    });
+                </script>
+                
             </div>
         </div>
     </footer>

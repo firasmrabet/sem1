@@ -15,6 +15,7 @@
 
     <!-- Link File CSS -->
     <link rel="stylesheet" href="style.css">
+    
 </head>
 <body class="menu-side-in-bag">
 
@@ -27,9 +28,9 @@
              <p> Bienvenue dans la boutique SMART STORE</p>
              <div class="link-top-heder">
                  <a href="#">My Account</a>
-                 <a href="#">My Wishlist</a>
-                 <a href="#">Sign In</a>
-                 <a href="#">Compare</a>
+                 
+                
+                 
              </div>
          </div>
            </div>
@@ -37,19 +38,21 @@
            <div class="header-info">
             <div class="contanier">
                 <img src="img/logo1.jpg" alt="" style="width:100px; height:auto;">
+                <div class="search-bar">
+                    <form action="">
+                        <input type="search" placeholder="Que souhaitez vous acheter..">
+                        <button class="btn-srch">chercher</button>
+                    </form>
+                </div>
+    
             
-            <div class="search-bar">
-                <form action="">
-                    <input type="search" placeholder="Que souhaitez vous acheter..">
-                    <button class="btn-srch">chercher</button>
-                </form>
-            </div>
+      
             <div class="card">
                 <div class="price">
                     <p>panier</p>
                     
                 </div>
-                <a href="mycart.html"><i class="fa-solid fa-bag-shopping"></i> <span class="count-in-card">2</span></a>
+                <a href="mycart.html"><i class="fa-solid fa-bag-shopping"></i> <span class="count-in-card">0</span></a>
 
                 
             </div>
@@ -138,7 +141,7 @@
             <div class="box">
               
                 <div class="content">
-                    <h6>الشحن مجانا</h6>
+                    <h6>livraison gratuit</h6>
                     <p>livraison dans 2 jours</p>
                 </div>
                 <img src="img/features1.png" alt="">
@@ -158,7 +161,7 @@
                
 
                 <div class="content">
-                    <h6>Support en ligne 24/7</h6>
+                    <h6>Support en ligne 24/24</h6>
                     <p>Support technique toujours prêt</p>
 
                 </div>
@@ -1870,7 +1873,8 @@
 
     <div class="newsletter">
         <div class="contanier">
-            <div class="subscribe-content">
+            <div style="margin-left: auto; margin-right: auto;" class="subscribe-content">
+
                 <img src="img/icon_email.png" alt="">
                 <div class="text">
                     <h4>Veuillez vous inscrire pour obtenir les dernières nouvelles</h4>
@@ -1878,12 +1882,7 @@
                     <span></span>
                 </div>
             </div>
-            <div class="subscribe-form">
-                    <form action="">
-                        <input type="search" placeholder= "Faites entrer votre mail pour vous inscrire">
-                        <button class="btn-srch">inscription</button>
-                    </form>
-            </div>
+            
         </div>
     </div>
 
@@ -1935,12 +1934,32 @@
         <div class="bottom-footer">
             <div class="contanier">
                 
-            <div class="payment">
-                <img src="img/payment-1.png" alt="">
-                <img src="img/payment-2.png" alt="">
-                <img src="img/payment-3.png" alt="">
-                <img src="img/payment-4.png" alt="">
-            </div>
+                <div class="payment">
+                    <img id="payment-1" src="img/payment-1.png" alt="Payment Method 1">
+                    <img id="payment-2" src="img/payment-2.png" alt="Payment Method 2">
+                    <img id="payment-3" src="img/payment-3.png" alt="Payment Method 3">
+                    <img id="payment-4" src="img/payment-4.png" alt="Payment Method 4">
+                </div>
+                
+                <script>
+                    // Ajouter des gestionnaires de clic pour chaque image en utilisant leurs IDs
+                    document.getElementById("payment-1").addEventListener("click", () => {
+                        window.location.href = "paiment.html";
+                    });
+                
+                    document.getElementById("payment-2").addEventListener("click", () => {
+                        window.location.href = "paiment.html";
+                    });
+                
+                    document.getElementById("payment-3").addEventListener("click", () => {
+                        window.location.href = "paiment.html";
+                    });
+                
+                    document.getElementById("payment-4").addEventListener("click", () => {
+                        window.location.href = "paiment.html";
+                    });
+                </script>
+                
             </div>
         </div>
     </footer>

@@ -24,7 +24,7 @@
             <ul class="drobdwon">
                 <li>Annulé <span>3</span></li>
                 <li>Renvoyé <span>2</span></li>
-
+                
             </ul>
         </div>
 
@@ -32,11 +32,10 @@
             <a href="#" class="logo"><span>SMART</span>STORE</a>
            
                 <ul class="side-links">
-                    <li><a href="index.html"><i class="fa-solid fa-house"></i> Tableau de bord</a></li>
-                        <li class="active"><a href="elaksam.html"><i class="fa-solid fa-shop"></i> Interface du magasin</a></li>
-                        
-                        
-
+                    <li><a href="index.html"><i class="fa-solid fa-house"></i>Tableau de bord</a></li>
+                    <li class="active"><a href="elaksam.html"><i class="fa-solid fa-shop"></i>Boutique</a></li>
+         
+                    
                 </ul>
            
         </div>
@@ -44,9 +43,9 @@
         <!-- لوحة التحكم -->
         <div class="contanier">
             <div class="top-sec">
-                <h4>Sections</h4>
+                <h4>Les entreprises</h4>
                 <div class="btn-add">
-                    <span onclick="showSec('.add-kesm')" class="btn">Ajouter une section <i class="fa-solid fa-plus"></i></span>
+                    <span onclick="showSec('.add-kesm')" class="btn">Ajouter une entreprise <i class="fa-solid fa-plus"></i></span>
                 </div>
                 
             </div>
@@ -57,7 +56,7 @@
                  <tr>
            
                      <td class="checkboxtable"><input type="checkbox"></td>
-                     <td>Nom de la section</td>
+                     <td>Nom de l'entreprise</td>
                      <td>Modifier</td>
                      
                    </tr>
@@ -66,14 +65,14 @@
 
                        <tr>
                          <td class="checkboxtable"><input type="checkbox"></td>
-                         <td>téléphones</td>
+                         <td>Casques</td>
                          <td><i class="fa-solid fa-pen"></i>
                             <i class="fa-solid fa-trash"></i></td>
                         </tr>
 
                         <tr>
                             <td class="checkboxtable"><input type="checkbox"></td>
-                            <td> Casques</td>
+                            <td> Souris</td>
                             <td><i class="fa-solid fa-pen"></i>
                                 <i class="fa-solid fa-trash"></i></td>
                            </tr>
@@ -81,7 +80,7 @@
 
                            <tr>
                             <td class="checkboxtable"><input type="checkbox"></td>
-                            <td> accessoires > Coque de téléphone</td>
+                            <td> Airpodes</td>
                             <td><i class="fa-solid fa-pen"></i>
                                 <i class="fa-solid fa-trash"></i></td>
                            </tr>
@@ -89,7 +88,7 @@
 
                            <tr>
                             <td class="checkboxtable"><input type="checkbox"></td>
-                            <td> accessoires > Coque de téléphone</td>
+                            <td> Téléphones</td>
                             <td><i class="fa-solid fa-pen"></i>
                                 <i class="fa-solid fa-trash"></i></td>
                            </tr>
@@ -117,7 +116,7 @@
             <i onclick="closeSec('.add-kesm')" class="fa-solid fa-circle-xmark"></i>
             
             <div class="top-sec">
-                <h4>Ajouter une section</h4>
+                <h4>Ajouter une entreprise</h4>
 
             </div>
     
@@ -128,24 +127,28 @@
                 <div class="img-area" data-img="">
                     <i class='bx bxs-cloud-upload icon'></i>
                    
-                    <p>Poids maximum du fichier <span>5MB</span></p>
-                    <button class="select-image">Choisir l'image</button>
-                    
+                    <p>Poids maximal du fichier <span>5MB</span></p>
+
+                </div>
+                <button class="select-image">Choisir une photo</button>
             </div>
 
             <div class="inp-add">
                 <div class="all-input">
                     <div class="inp">
-                        <label for="">Nom de la section</label>
-                        <input type="text" name="" id="" placeholder="Numéro de la commande">
+                        <label for="">Nom de l'entreprise</label>
 
-                        <div class="inp">
-                            <label for="">Sous-section</label>
-                            <input type="text" name="" id="" placeholder="Numéro de la commande">
-                        </div>
+                        <input type="text" name="" id="" placeholder="Numéro de commande">
 
-                        <button class="btn">Ajouter la section</button>
+                    </div>
 
+                    <div class="inp">
+                        <label for="">Description de l'entreprise</label>
+                        <input type="text" name="" id="" placeholder="Numéro de commande">
+                        
+                    </div>
+
+                    <button class="btn">Ajouter une entreprise</button>
                 </div>
             </div>
 
